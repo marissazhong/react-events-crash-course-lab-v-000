@@ -21,10 +21,10 @@ export default class ChromeBoisDomain extends Component {
      return toggleCycling();
    }
 
-  handleKeyDown = (key) => {
-    if (key.which === 97) { // 'a' was pressed
+  handleKeyDown = (e) => {
+    if (e.key === 'a') {
       return resize('+');
-    } else if (key.which === 115) { // 's' was pressed
+    } else if (e.key === 's') {
       return resize('-');
     };
   };
