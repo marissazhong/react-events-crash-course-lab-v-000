@@ -22,7 +22,7 @@ export default class ChromeBoisDomain extends Component {
    }
 
   resize = (key) => {
-    if (key.which === 43) // '+' sign
+    if (key.which === 43) // 'a' was pressed
   }
 
   render() {
