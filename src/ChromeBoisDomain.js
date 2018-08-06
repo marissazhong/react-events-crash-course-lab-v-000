@@ -22,7 +22,9 @@ export default class ChromeBoisDomain extends Component {
    }
 
   resize = (key) => {
-    if (key.which === 43) // 'a' was pressed
+    if (key.which === 97) // 'a' was pressed
+
+
   }
 
   render() {
