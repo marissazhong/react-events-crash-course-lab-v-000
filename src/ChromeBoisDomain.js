@@ -17,15 +17,15 @@ export default class ChromeBoisDomain extends Component {
    * listener that should fire it!
    */
 
-   toggleCycling = () => {
-
+   handleClick = () => {
+     return toggleCycling()
    }
 
-  resize = (key) => {
+  handleKeyDown = (key) => {
     if (key.which === 97) { // 'a' was pressed
-
+      return resize('+')
     } else if (key.which === 115) { // 's' was pressed
-    
+      return resize('-')
     }
   }
 
@@ -33,8 +33,8 @@ export default class ChromeBoisDomain extends Component {
     return (
       <canvas
         onMouseMove={this.handleMouseMove}
-        onClick={this.toggleCycling}
-        onKeydown={this.resize}
+        onClick={this.handleClick}
+        onKeydown={this.handleKeyDown}
         width='900'
         height='600'
         tabIndex="0">
