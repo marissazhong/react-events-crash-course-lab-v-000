@@ -18,16 +18,16 @@ export default class ChromeBoisDomain extends Component {
    */
 
    handleClick = () => {
-     return toggleCycling()
+     return toggleCycling();
    }
 
   handleKeyDown = (key) => {
     if (key.which === 97) { // 'a' was pressed
-      return resize('+')
+      return resize('+');
     } else if (key.which === 115) { // 's' was pressed
-      return resize('-')
-    }
-  }
+      return resize('-');
+    };
+  };
 
   render() {
     return (
